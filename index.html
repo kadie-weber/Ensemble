@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ensemble — The social network for theater makers. Connect, collaborate, and create with artists around the world." />
+  <title>Ensemble — For Theater Makers</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-nav">
+    <div class="nav-inner">
+      <span class="wordmark">Ensemble</span>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#signup" class="btn-nav">Get Early Access</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="spotlight"></div>
+    <div class="hero-content">
+      <p class="act-label">Act I</p>
+      <h1>Where Theater<br /><em>Makers</em> Meet</h1>
+      <p class="hero-sub">
+        Ensemble is a dedicated space for directors, actors, playwrights,
+        designers, and crew to find each other, share their work, and
+        bring productions to life.
+      </p>
+      <a href="#signup" class="btn-primary">Join the Company</a>
+    </div>
+    <div class="curtain-left"></div>
+    <div class="curtain-right"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <h2 class="section-title">The Stage Is Set</h2>
+      <p class="section-sub">
+        Theater is the most collaborative art form in the world.
+        Ensemble gives it the platform it deserves.
+      </p>
+      <div class="pillars">
+
+        <div class="pillar">
+          <div class="pillar-icon">&#9676;</div>
+          <h3>Connect</h3>
+          <p>
+            Find collaborators by discipline, location, or production type.
+            Build a network that spans the full spectrum of live performance.
+          </p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon">&#9733;</div>
+          <h3>Collaborate</h3>
+          <p>
+            Post and discover opportunities — from workshops and readings
+            to full productions. Your next project is one conversation away.
+          </p>
+        </div>
+
+        <div class="pillar">
+          <div class="pillar-icon">&#9774;</div>
+          <h3>Create</h3>
+          <p>
+            Showcase your portfolio, document your process, and let the world
+            see the work behind the work.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="stage-divider" aria-hidden="true">
+    <span class="divider-ornament">&#10022;</span>
+  </div>
+
+  <!-- SIGNUP -->
+  <section class="signup" id="signup">
+    <div class="section-inner narrow">
+      <h2 class="section-title">Be First on Stage</h2>
+      <p class="section-sub">
+        Ensemble is opening its doors to a founding company of theater makers.
+        Leave your email and you'll be among the first to receive an invitation.
+      </p>
+
+      <form
+        id="signup-form"
+        class="signup-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        novalidate
+      >
+        <!-- Honeypot -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <div class="form-row">
+          <label for="name" class="sr-only">Your name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            autocomplete="name"
+            required
+          />
+        </div>
+
+        <div class="form-row">
+          <label for="email" class="sr-only">Your email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email address"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="form-row">
+          <label for="role" class="sr-only">Your primary role</label>
+          <select id="role" name="role">
+            <option value="" disabled selected>Your primary role (optional)</option>
+            <option value="actor">Actor</option>
+            <option value="director">Director</option>
+            <option value="playwright">Playwright</option>
+            <option value="designer">Designer</option>
+            <option value="stage-manager">Stage Manager</option>
+            <option value="composer">Composer / Music Director</option>
+            <option value="choreographer">Choreographer</option>
+            <option value="crew">Crew / Technical</option>
+            <option value="producer">Producer</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary btn-submit" id="submit-btn">
+          Reserve My Place
+        </button>
+
+        <div id="form-message" class="form-message" aria-live="polite"></div>
+      </form>
+
+      <p class="form-note">No spam. No curtain calls you didn't ask for.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="wordmark wordmark-footer">Ensemble</span>
+      <p class="footer-tagline">The social network for theater makers.</p>
+      <nav class="footer-links">
+        <a href="mailto:hello@ensemble.theater">Contact</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Ensemble. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
