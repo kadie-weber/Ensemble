@@ -47,7 +47,7 @@
 
     // Submit state
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Taking the stage\u2026';
+    submitBtn.textContent = 'Sending\u2026';
 
     try {
       const data = new FormData(form);
@@ -60,10 +60,10 @@
       if (response.ok) {
         form.reset();
         setMessage(
-          'You\u2019re on the list \u2014 the curtain rises soon. Check your inbox.',
+          'You\u2019re on the list. We\u2019ll be in touch.',
           'success'
         );
-        submitBtn.textContent = 'You\u2019re in the Company';
+        submitBtn.textContent = 'You\u2019re In';
       } else {
         const json = await response.json().catch(() => ({}));
         const errText =

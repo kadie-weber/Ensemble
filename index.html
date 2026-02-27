@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ensemble — The social network for theater makers. Connect, collaborate, and create with artists around the world." />
-  <title>Ensemble — For Theater Makers</title>
+  <meta name="description" content="Ensemble — The network for artists who make things together. Find collaborators, form bands, build companies, and bring ideas to life." />
+  <title>Ensemble — For Artists Who Collaborate</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -18,7 +18,7 @@
   <!-- NAV -->
   <header class="site-nav">
     <div class="nav-inner">
-      <span class="wordmark">Ensemble</span>
+      <span class="wordmark">ENSEMBLE</span>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#signup" class="btn-nav">Get Early Access</a>
@@ -28,55 +28,72 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="spotlight"></div>
     <div class="hero-content">
-      <p class="act-label">Act I</p>
-      <h1>Where Theater<br /><em>Makers</em> Meet</h1>
+      <p class="hero-label">For Artists Who Collaborate</p>
+      <h1>Find Your<br />People.</h1>
       <p class="hero-sub">
-        Ensemble is a dedicated space for directors, actors, playwrights,
-        designers, and crew to find each other, share their work, and
-        bring productions to life.
+        Ensemble is a network for artists who make things together —
+        musicians, directors, visual artists, performers, writers,
+        choreographers, composers, and everyone in between.
       </p>
-      <a href="#signup" class="btn-primary">Join the Company</a>
+      <a href="#signup" class="btn-primary">Get Early Access</a>
     </div>
-    <div class="curtain-left"></div>
-    <div class="curtain-right"></div>
+    <div class="hero-disciplines" aria-hidden="true">
+      <span>Musician</span>
+      <span>Director</span>
+      <span>Painter</span>
+      <span>Playwright</span>
+      <span>Choreographer</span>
+      <span>Composer</span>
+      <span>Filmmaker</span>
+      <span>Actor</span>
+      <span>Sculptor</span>
+      <span>Lighting Designer</span>
+      <span>Poet</span>
+      <span>Producer</span>
+    </div>
   </section>
 
   <!-- ABOUT -->
   <section class="about" id="about">
     <div class="section-inner">
-      <h2 class="section-title">The Stage Is Set</h2>
-      <p class="section-sub">
-        Theater is the most collaborative art form in the world.
-        Ensemble gives it the platform it deserves.
-      </p>
+      <div class="about-header">
+        <h2 class="section-title">Built for the<br />way artists work.</h2>
+        <p class="section-sub">
+          Great work rarely happens alone. Ensemble is designed around
+          the reality of creative collaboration — across disciplines,
+          across cities, across every kind of project.
+        </p>
+      </div>
       <div class="pillars">
 
         <div class="pillar">
-          <div class="pillar-icon">&#9676;</div>
-          <h3>Connect</h3>
+          <span class="pillar-num">01</span>
+          <h3>Find</h3>
           <p>
-            Find collaborators by discipline, location, or production type.
-            Build a network that spans the full spectrum of live performance.
+            Search for collaborators by discipline, location, and availability.
+            A guitarist finds a lyricist. A director finds a set designer.
+            A filmmaker finds a score composer. Whatever you're making,
+            find the people who make it possible.
           </p>
         </div>
 
         <div class="pillar">
-          <div class="pillar-icon">&#9733;</div>
-          <h3>Collaborate</h3>
+          <span class="pillar-num">02</span>
+          <h3>Make</h3>
           <p>
-            Post and discover opportunities — from workshops and readings
-            to full productions. Your next project is one conversation away.
+            Post projects and open calls. Form a band, assemble a company,
+            build a creative team from scratch. Connect around the work —
+            not the platform.
           </p>
         </div>
 
         <div class="pillar">
-          <div class="pillar-icon">&#9774;</div>
-          <h3>Create</h3>
+          <span class="pillar-num">03</span>
+          <h3>Show</h3>
           <p>
-            Showcase your portfolio, document your process, and let the world
-            see the work behind the work.
+            Portfolio pages built for working artists. Document your process,
+            share what you've made, and let the work speak for itself.
           </p>
         </div>
 
@@ -85,17 +102,15 @@
   </section>
 
   <!-- DIVIDER -->
-  <div class="stage-divider" aria-hidden="true">
-    <span class="divider-ornament">&#10022;</span>
-  </div>
+  <div class="rule-divider" aria-hidden="true"></div>
 
   <!-- SIGNUP -->
   <section class="signup" id="signup">
     <div class="section-inner narrow">
-      <h2 class="section-title">Be First on Stage</h2>
+      <h2 class="section-title">Get in early.</h2>
       <p class="section-sub">
-        Ensemble is opening its doors to a founding company of theater makers.
-        Leave your email and you'll be among the first to receive an invitation.
+        We're building Ensemble with a founding community of artists.
+        Leave your email and you'll be among the first through the door.
       </p>
 
       <form
@@ -133,40 +148,72 @@
         </div>
 
         <div class="form-row">
-          <label for="role" class="sr-only">Your primary role</label>
+          <label for="role" class="sr-only">Your primary discipline</label>
           <select id="role" name="role">
-            <option value="" disabled selected>Your primary role (optional)</option>
-            <option value="actor">Actor</option>
-            <option value="director">Director</option>
-            <option value="playwright">Playwright</option>
-            <option value="designer">Designer</option>
-            <option value="stage-manager">Stage Manager</option>
-            <option value="composer">Composer / Music Director</option>
-            <option value="choreographer">Choreographer</option>
-            <option value="crew">Crew / Technical</option>
-            <option value="producer">Producer</option>
-            <option value="other">Other</option>
+            <option value="" disabled selected>Your primary discipline (optional)</option>
+            <optgroup label="Music">
+              <option value="musician">Musician / Instrumentalist</option>
+              <option value="vocalist">Vocalist / Singer</option>
+              <option value="composer">Composer / Arranger</option>
+              <option value="producer-music">Music Producer</option>
+              <option value="dj">DJ / Electronic Artist</option>
+            </optgroup>
+            <optgroup label="Theater &amp; Performance">
+              <option value="actor">Actor</option>
+              <option value="director">Director</option>
+              <option value="playwright">Playwright</option>
+              <option value="choreographer">Choreographer</option>
+              <option value="stage-manager">Stage Manager</option>
+              <option value="performance-artist">Performance Artist</option>
+            </optgroup>
+            <optgroup label="Visual Art &amp; Design">
+              <option value="visual-artist">Visual Artist (Painter / Sculptor)</option>
+              <option value="illustrator">Illustrator / Graphic Artist</option>
+              <option value="photographer">Photographer</option>
+              <option value="set-designer">Set / Production Designer</option>
+              <option value="lighting-designer">Lighting Designer</option>
+              <option value="costume-designer">Costume Designer</option>
+            </optgroup>
+            <optgroup label="Film &amp; Moving Image">
+              <option value="filmmaker">Filmmaker / Director</option>
+              <option value="cinematographer">Cinematographer / DP</option>
+              <option value="video-artist">Video Artist</option>
+              <option value="editor">Editor</option>
+            </optgroup>
+            <optgroup label="Writing &amp; Text">
+              <option value="writer">Writer / Novelist</option>
+              <option value="poet">Poet</option>
+              <option value="lyricist">Lyricist</option>
+              <option value="dramaturg">Dramaturg</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="producer">Producer / Presenter</option>
+              <option value="curator">Curator</option>
+              <option value="critic">Critic / Journalist</option>
+              <option value="educator">Arts Educator</option>
+              <option value="other">Other</option>
+            </optgroup>
           </select>
         </div>
 
         <button type="submit" class="btn-primary btn-submit" id="submit-btn">
-          Reserve My Place
+          Join the List
         </button>
 
         <div id="form-message" class="form-message" aria-live="polite"></div>
       </form>
 
-      <p class="form-note">No spam. No curtain calls you didn't ask for.</p>
+      <p class="form-note">No spam. No noise. Just the good stuff.</p>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <span class="wordmark wordmark-footer">Ensemble</span>
-      <p class="footer-tagline">The social network for theater makers.</p>
+      <span class="wordmark wordmark-footer">ENSEMBLE</span>
+      <p class="footer-tagline">The network for artists who make things together.</p>
       <nav class="footer-links">
-        <a href="mailto:hello@ensemble.theater">Contact</a>
+        <a href="mailto:hello@ensemble.art">Contact</a>
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
       </nav>
